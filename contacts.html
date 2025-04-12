@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teacher</title>
+    <meta name="description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<main>
+    <section class="top">
+        <header class="header">
+            <div class="container">
+                <div class="header__grid">
+                    <a href="index.html" class="header__logo">teacher.</a>
+
+                    <div class="header__list">
+                        <a href="contacts.html" target="_blank" class="header__link link">Contacts</a>
+                        <a href="pricing.html" target="_blank" class="header__link link">Pricing</a>
+                        <a href="how-it-works.html" target="_blank" class="header__link link">How it works</a>
+                        <a href="about.html" target="_blank" class="header__link link">About</a>
+                        <a href="#" target="_blank" class="header__link button button_default">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="info info_contacts">
+            <div class="container">
+                <div class="info__grid">
+                    <div class="info__content">
+                        <p class="text">Whether you’ve spotted a typo, found a mistake, have suggestions for improving our materials or website, or simply want to share your thoughts—we’re all ears.</p>
+                        <p class="text">If you’re looking for something more specific, like custom-tailored lessons designed to fit your unique teaching needs, we’d be happy to help as well! Just let us know what you have in mind, and we’ll see how we can bring it to life.</p>
+                        <p class="text">And of course, if you have any questions, need assistance with your purchase, or just want to say hi—don’t hesitate to reach out.</p>
+                        <p class="text">Drop us a message via <a href="mailto:teacher.contactme@gmail.com" class="link">teacher.contactme@gmail.com</a> and we’ll get back to you as soon as possible.</p>
+                        <p class="text">Your feedback helps us grow and improve, and we truly appreciate every message. Looking forward to hearing from you!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__rights">© 2025 - All rights reserved</div>
+        </div>
+    </div>
+</footer>
+
+<div id="popup" class="popup">
+    <div class="popup__backdrop popup-close"></div>
+    <div class="popup__content">
+        <div class="popup__head">
+            <div class="popup__close popup-close"><img src="dist/img/icon-cross.svg" alt="" width="100%"></div>
+        </div>
+        <div class="popup__image"><img src="dist/img/preview.png" alt="" width="100%"></div>
+    </div>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="dist/js/parallaxify.js"></script>
+<script src="dist/js/main.js"></script>
+
+<script>
+  var swiperInfo = new Swiper('.info__carousel', {
+    loop: false,
+    autoHeight: true,
+    centeredSlides: false,
+    allowTouchMove: false,
+    slidesPerView: 1,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    }
+  });
+  var swiperArticle = new Swiper('.article__carousel', {
+      loop: true,
+      centeredSlides: false,
+      slidesPerView: 1,
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+  });
+</script>
+</html>
