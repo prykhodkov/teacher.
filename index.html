@@ -1,16 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RZFWSW991"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0RZFWSW991');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Teacher</title>
-    <meta name="description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry">
+    <title>teacher.</title>
+    <meta name="description" content="Your time matters — spend it living, not prepping!">
+    <meta property="og:title" content="Your time matters — spend it living, not prepping!">
+    <meta property="og:image" content="https://teacher-eslresources.com/dist/img/preview.png">
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=WindSong:wght@500&display=swap" rel="stylesheet">
 
     <link href="dist/css/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -23,396 +40,701 @@
                 <div class="header__grid">
                     <a href="index.html" class="header__logo">teacher.</a>
 
-                    <div class="header__list">
+                    <div id="nav" class="header__list" tabindex="0">
                         <a href="contacts.html" target="_blank" class="header__link link">Contacts</a>
                         <a href="pricing.html" target="_blank" class="header__link link">Pricing</a>
                         <a href="how-it-works.html" target="_blank" class="header__link link">How it works</a>
                         <a href="about.html" target="_blank" class="header__link link">About</a>
-                        <a href="#" target="_blank" class="header__link button button_default">Get Started</a>
+
+                        <div id="navToggle" class="header__toggle">
+                            <div id="navOpen" class="header__icon header__icon_menu">
+                                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M4 12H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M4 6H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div id="navClose" class="header__icon header__icon_close hide">
+                                <svg fill="#ffffff" height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 490 490" xml:space="preserve">
+                                    <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 
+                                    489.292,457.678 277.331,245.004 489.292,32.337 "/>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
 
-        <section class="main">
+        <section class="products">
             <div class="container">
-                <div class="main__grid">
-                    <div class="main__content">
-                        <div class="main__tag">Teaching Resources for English</div>
-                        <h1 class="main__title">Your time matters - <br><span class="text-gray">spend it living, not prepping!</span></h1>
-                        <div class="main__text">Teaching resources designed to gave you time and energy</div>
-                        <div class="main__buttons">
-                            <div class="button button_default">
-                                <span>Browse Resources</span>
-                                <svg fill="#ffffff" height="16px" width="16px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
-                                    <path id="XMLID_27_" d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
-                                        s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
-                                        c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"/>
-                                </svg>
+                <div class="products__grid">
+                    <div class="products__info">
+                        <h1 class="products__title">Your time matters — <br><span class="text-gray">spend it living, not prepping!</span></h1>
+                        <div class="products__text">Teaching resources designed to save you time and energy</div>
+                    </div>
+
+                    <div class="products__filters">
+                        <div id="filterLevel" class="products__filter dropdown" tabindex="0">
+                            <div class="dropdown__head">
+                                <span class="label">All levels</span>
+                                <div class="icon"><img src="dist/img/icon-arrow-down.svg" alt="" width="100%"></div>
                             </div>
-                            <div class="button button_secondary">Learn More</div>
+                            
+                            <div class="dropdown__body">
+                                <div class="dropdown__option" data-level="all">All levels</div>
+                                <div class="dropdown__option" data-level="b1">B1</div>
+                                <div class="dropdown__option" data-level="b2">B2</div>
+                                <div class="dropdown__option" data-level="c1">C1</div>
+                                <div class="dropdown__option" data-level="c2">C2</div>
+                            </div>
+                        </div>
+    
+                        <div id="filterType" class="products__filter dropdown" tabindex="0">
+                            <div class="dropdown__head">
+                                <span class="label">All types</span>
+                                <div class="icon"><img src="dist/img/icon-arrow-down.svg" alt="" width="100%"></div>
+                            </div>
+    
+                            <div class="dropdown__body">
+                                <div class="dropdown__option" data-type="all">All types</div>
+                                <div class="dropdown__option" data-type="vocabulary">Vocabulary</div>
+                                <div class="dropdown__option" data-type="grammar">Grammar</div>
+                            </div>
                         </div>
 
-                        <div class="main__image main__image_1" data-parallaxify-range-x="50" data-parallaxify-range-y="-50"><img src="dist/img/main-1.png" alt="" width="100%"></div>
-                        <div class="main__image main__image_2" data-parallaxify-range-x="-50" data-parallaxify-range-y="-50"><img src="dist/img/main-2.png" alt="" width="100%"></div>
-                        <div class="main__image main__image_3" data-parallaxify-range-x="-50" data-parallaxify-range-y="50"><img src="dist/img/main-3.png" alt="" width="100%"></div>
-                        <div class="main__image main__image_4" data-parallaxify-range-x="-50" data-parallaxify-range-y="50"><img src="dist/img/main-4.png" alt="" width="100%"></div>
-                        <div class="main__image main__image_5" data-parallaxify-range-x="50" data-parallaxify-range-y="50"><img src="dist/img/main-5.png" alt="" width="100%"></div>
-                        <div class="main__image main__image_6" data-parallaxify-range-x="50" data-parallaxify-range-y="-50"><img src="dist/img/main-6.png" alt="" width="100%"></div>
-                        <div class="main__image main__image_7"><img src="dist/img/main-7.png" alt="" width="100%"></div>
-                        <div class="main__image main__image_8"><img src="dist/img/main-8.png" alt="" width="100%"></div>
-                        <div class="main__image main__image_9"><img src="dist/img/main-9.png" alt="" width="100%"></div>
-                        <div class="main__image main__image_10"><img src="dist/img/main-10.png" alt="" width="100%"></div>
+                        <div class="products__search">
+                            <div id="searchIcon" class="icon-search"><img src="dist/img/icon-search.svg" alt="" width="100%"></div>
+                            <input type="text" id="searchFilter" class="input-field" placeholder="Search" />
+                            <div id="clearIcon" class="icon-clear"><img src="dist/img/icon-cross.svg" alt="" width="100%"></div>
+                        </div>
+                    </div>
+    
+                    <div class="products__list">
+                        <div class="product" data-levels="b1, b2, c1" data-types="vocabulary, grammar">
+                            <div class="product__head">
+                                <div class="product__image"><img src="dist/img/course-1.png" alt="" height="100%"></div>
+                                <div class="product__tags">
+                                    <div class="product__tag product__tag_price">250UAH</div>
+                                    <div class="product__tag product__tag_level">B1-C1</div>
+                                    <div class="product__tag product__tag_type">Vocabulary</div>
+                                    <div class="product__tag product__tag_type">Grammar</div>
+                                </div>
+                            </div>
+    
+                            <div class="product__body">
+                                <div class="product__title">HEY! HOW'S IT GOING?: Let's get to know <br>each other (Fillers + Indirect questions)</div>
+    
+                                <div class="product__buttons">
+                                    <div class="button button_secondary popup-open">
+                                        <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
+                                        </svg>
+                                        <span>Preview</span>
+                                    </div>
+                                    <a href="https://t.me/teacher_eslresources" target="_blank" class="button button_default">
+                                        <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Complete">
+                                                <g id="download">
+                                                    <g>
+                                                        <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                        <g>
+                                                            <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Download</span>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="popup__text">
+                                <div class="text">This multi-part lesson focuses on improving fluency and polite communication through the use of conversation fillers and indirect questions.</div>
+                                <ul class="list"><span class="list__label">Key areas include:</span>
+                                    <li>Fillers for natural speech <span class="text-semibold text-italic">(e.g., frankly speaking, honestly, on top of that, basically, long story short, etc.)</span></li>
+                                    <li>Grammar focus: forming and using indirect questions for clarity and politeness <span class="text-semibold text-italic">(e.g., Could you tell me where the nearest metro station is? / Do you know if the hotel serves breakfast? / I was wondering what time the meeting starts.)</span></li>
+                                    <li>Practice activities: personalized discussions, role-plays, vocabulary and grammar drills</li>
+                                    <li>Homework and follow-up: additional video exposure and grammar tasks to reinforce indirect questions, vocabulary list</li>
+                                </ul>
+                                <div class="text">The class can be delivered in one or two sessions, with the first focusing on conversation fillers and discussions, and the second on indirect question grammar. Teachers are encouraged to adapt based on student needs, with flexibility to extend into additional sessions for more practice if needed.</div>
+                            </div>
+                        </div>
+    
+                        <div class="product" data-levels="b2, c1" data-types="vocabulary, grammar">
+                            <div class="product__head">
+                                <div class="product__image"><img src="dist/img/course-2.png" alt="" height="100%"></div>
+                                <div class="product__tags">
+                                    <div class="product__tag product__tag_price">400UAH</div>
+                                    <div class="product__tag product__tag_level">B2-C1</div>
+                                    <div class="product__tag product__tag_type">Vocabulary</div>
+                                    <div class="product__tag product__tag_type">Grammar</div>
+                                </div>
+                            </div>
+    
+                            <div class="product__body">
+                                <div class="product__title">Routines & Rhythms: Building habits <br>(Habits + USED TO Constructions)</div>
+    
+                                <div class="product__buttons">
+                                    <div class="button button_secondary popup-open">
+                                        <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
+                                        </svg>
+                                        <span>Preview</span>
+                                    </div>
+                                    <a href="https://t.me/teacher_eslresources" target="_blank" class="button button_default">
+                                        <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Complete">
+                                                <g id="download">
+                                                    <g>
+                                                        <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                        <g>
+                                                            <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Download</span>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="popup__text">
+                                <div class="text">This multi-part lesson focuses on language for talking about habits and routines, as well as mastering the grammar of "used to," "be used to," and "get used to" constructions.</div>
+                                <ul class="list"><span class="list__label">Key areas include:</span>
+                                    <li>Vocabulary for habits and routines <span class="text-semibold text-italic">(e.g., stick to, once in a while, cut back on, develop a habit, ditch, consistently, etc.)</span></li>
+                                    <li>Grammar focus: explaining and applying the differences between <span class="text-semibold text-italic">“used to”, “be used to”,</span> and <span class="text-semibold text-italic">“get used to”</span></li>
+                                    <li>Practice activities: personalized discussions, sentence rewrites, habit reflection tasks, and video-based speaking prompts</li>
+                                    <li>Homework and follow-up: quizlet set, grammar and vocabulary reinforcement, additional article and video exposure, and an optional writing task</li>
+                                </ul>
+                                <div class="text">The class can be split into up to three sessions for deeper practice, starting with vocabulary and habit discussion, followed by grammar instruction, and finishing with extended practice. Teachers are encouraged to adapt based on student needs, with flexibility to extend into additional sessions for more practice if needed.</div>
+                            </div>
+                        </div>
+    
+                        <div class="product" data-levels="b2, c1" data-types="vocabulary, grammar">
+                            <div class="product__head">
+                                <div class="product__image"><img src="dist/img/course-3.png" alt="" height="100%"></div>
+                                <div class="product__tags">
+                                    <div class="product__tag product__tag_price">400UAH</div>
+                                    <div class="product__tag product__tag_level">B2-C1</div>
+                                    <div class="product__tag product__tag_type">Vocabulary</div>
+                                    <div class="product__tag product__tag_type">Grammar</div>
+                                </div>
+                            </div>
+    
+                            <div class="product__body">
+                                <div class="product__title">WHAT WAS IT LIKE? (Memories + <br>USED TO/WOULD Constructions)</div>
+    
+                                <div class="product__buttons">
+                                    <div class="button button_secondary popup-open">
+                                        <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
+                                        </svg>
+                                        <span>Preview</span>
+                                    </div>
+                                    <a href="https://t.me/teacher_eslresources" target="_blank" class="button button_default">
+                                        <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Complete">
+                                                <g id="download">
+                                                    <g>
+                                                        <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                        <g>
+                                                            <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Download</span>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="popup__text">
+                                <div class="text">This multi-part lesson focuses on reflecting on memories and developing advanced fluency in talking about the past, with a strong focus on the grammar of "used to" and "would" for past habits and repeated actions.</div>
+                                <ul class="list"><span class="list__label">Key areas include:</span>
+                                    <li>Vocabulary related to memory and remembering <span class="text-semibold text-italic">(e.g., take a trip down memory lane, pop into one’s mind, everything is just a blur, in hindsight, my mind goes blank when..., etc.)</span></li>
+                                    <li>Grammar focus: contrasting and using <span class="text-semibold text-italic">“used to”</span> vs. <span class="text-semibold text-italic">“would”</span></li>
+                                    <li>Practice activities: storytelling, sentence transformations, vocabulary and grammar drills, and video discussions</li>
+                                    <li>Homework and follow-up: quizlet set, grammar and vocabulary reinforcement, additional article and video exposure, and an optional writing task</li>
+                                </ul>
+                                <div class="text">The class can be divided into three sessions for maximum retention. Begin with vocabulary discussion, move on to the video, followed by focused grammar work. Teachers are encouraged to adapt based on student needs, with flexibility to extend into additional sessions for more practice if needed.</div>
+                            </div>
+                        </div>
+    
+                        <div class="product" data-levels="b1, b2, c1" data-types="vocabulary">
+                            <div class="product__head">
+                                <div class="product__image"><img src="dist/img/course-4.png" alt="" height="100%"></div>
+                                <div class="product__tags">
+                                    <div class="product__tag product__tag_price">300UAH</div>
+                                    <div class="product__tag product__tag_level">B1-C1</div>
+                                    <div class="product__tag product__tag_type">Vocabulary</div>
+                                </div>
+                            </div>
+    
+                            <div class="product__body">
+                                <div class="product__title">What's YOUR guilty pleasure?</div>
+    
+                                <div class="product__buttons">
+                                    <div class="button button_secondary popup-open">
+                                        <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
+                                        </svg>
+                                        <span>Preview</span>
+                                    </div>
+                                    <a href="https://t.me/teacher_eslresources" target="_blank" class="button button_default">
+                                        <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Complete">
+                                                <g id="download">
+                                                    <g>
+                                                        <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                        <g>
+                                                            <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Download</span>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="popup__text">
+                                <div class="text">This multi-part lesson focuses on language for discussing guilty pleasures, incorporating vocabulary for personal indulgences and habits, as well as opportunities for self-reflection.</div>
+                                <ul class="list"><span class="list__label">Key areas include:</span>
+                                    <li>Vocabulary for guilty pleasures <span class="text-semibold text-italic">(e.g., I just can’t resist, I binge on, I’m addicted to, once in a while, tempting, I got hooked on, indulge in, I can’t help it, I must confess, etc.)</span></li>
+                                    <li>Practice activities: personalized discussions, video-based prediction and speaking tasks, sentence completion, and reflection on relatable or unusual guilty pleasures</li>
+                                    <li>Homework and follow-up: quizlet set, vocabulary reinforcement, additional video and article exposure, and an optional writing task</li>
+                                </ul>
+                                <div class="text">The class can be split into up to two sessions for deeper exploration, starting with vocabulary introduction and initial discussion, followed by extended practice and homework review. Teachers are encouraged to adapt based on student needs, with flexibility to extend into additional sessions for more practice if needed.</div>
+                            </div>
+                        </div>
+    
+                        <div class="product" data-levels="b1, b2, c1" data-types="vocabulary">
+                            <div class="product__head">
+                                <div class="product__image"><img src="dist/img/course-5.png" alt="" height="100%"></div>
+                                <div class="product__tags">
+                                    <div class="product__tag product__tag_price">300UAH</div>
+                                    <div class="product__tag product__tag_level">B1-C1</div>
+                                    <div class="product__tag product__tag_type">Vocabulary</div>
+                                </div>
+                            </div>
+    
+                            <div class="product__body">
+                                <div class="product__title">BINGE-WATCHING: Do you binge-watch?</div>
+    
+                                <div class="product__buttons">
+                                    <div class="button button_secondary popup-open">
+                                        <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
+                                        </svg>
+                                        <span>Preview</span>
+                                    </div>
+                                    <a href="https://t.me/teacher_eslresources" target="_blank" class="button button_default">
+                                        <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Complete">
+                                                <g id="download">
+                                                    <g>
+                                                        <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                        <g>
+                                                            <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Download</span>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="popup__text">
+                                <div class="text">This multi-part lesson explores language for talking about binge-watching, focusing on vocabulary related to habits and indulgence, alongside opportunities for self-reflection.</div>
+                                <ul class="list"><span class="list__label">Key areas include:</span>
+                                    <li>Vocabulary for binge-watching and habits <span class="text-semibold text-italic">(e.g., binge-watch, indulge in, crave, lose track of time, consume in moderation, be addicted to, dopamine, in one sitting, etc.)</span></li>
+                                    <li>Practice activities: personalized discussions, video-based comprehension and speaking tasks, sentence completion exercises, discussions about TV shows</li>
+                                    <li>Homework and follow-up: quizlet set, vocabulary reinforcement, additional video and article exposure, and an optional writing task</li>
+                                </ul>
+                                <div class="text">The class can be split into up to three sessions for deeper practice, starting with vocabulary introduction and video discussion, followed by TV shows discussion, and finally extended language drills. Teachers are encouraged to adapt based on student needs, with flexibility to extend into additional sessions for more practice if needed.</div>
+                            </div>
+                        </div>
+    
+                        <div class="product" data-levels="b1, b2, c1" data-types="vocabulary">
+                            <div class="product__head">
+                                <div class="product__image"><img src="dist/img/course-6.png" alt="" height="100%"></div>
+                                <div class="product__tags">
+                                    <div class="product__tag product__tag_price">350UAH</div>
+                                    <div class="product__tag product__tag_level">B1-C1</div>
+                                    <div class="product__tag product__tag_type">Vocabulary</div>
+                                </div>
+                            </div>
+    
+                            <div class="product__body">
+                                <div class="product__title">WHAT'S IN YOUR BAG? Daily essentials...</div>
+    
+                                <div class="product__buttons">
+                                    <div class="button button_secondary popup-open">
+                                        <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
+                                        </svg>
+                                        <span>Preview</span>
+                                    </div>
+                                    <a href="https://t.me/teacher_eslresources" target="_blank" class="button button_default">
+                                        <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Complete">
+                                                <g id="download">
+                                                    <g>
+                                                        <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                        <g>
+                                                            <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Download</span>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="popup__text">
+                                <div class="text">This multi-part lesson focuses on everyday language for discussing personal belongings and daily essentials typically carried in a bag.</div>
+                                <ul class="list"><span class="list__label">Key areas include:</span>
+                                    <li>Vocabulary for bag contents and daily essentials <span class="text-semibold text-italic">(e.g., come in handy, multi-functional, lifesaver, essential, hair ties, make-up remover, pads, water/wet wipes, etc.)</span></li>
+                                    <li>Practice activities: personalized discussions, video-based exploration (e.g., Gigi Hadid’s bag contents), reading and discussing an article, matching exercises, and reflection tasks on essential items and mishaps</li>
+                                    <li>Homework and follow-up: quizlet set, vocabulary reinforcement, additional video exposure, picture description, and an optional writing task</li>
+                                </ul>
+                                <div class="text">The class can be split into up to three sessions for deeper practice, starting with vocabulary introduction and video discussion, followed by reading and language drills, and finishing with extended speaking practice and homework review. Teachers are encouraged to adapt based on student needs, with flexibility to extend into additional sessions for more practice if needed.</div>
+                            </div>
+                        </div>
+    
+                        <div class="product" data-levels="b1, b2, c1" data-types="vocabulary">
+                            <div class="product__head">
+                                <div class="product__image"><img src="dist/img/course-7.png" alt="" height="100%"></div>
+                                <div class="product__tags">
+                                    <div class="product__tag product__tag_price">400UAH</div>
+                                    <div class="product__tag product__tag_level">B1-C1</div>
+                                    <div class="product__tag product__tag_type">Vocabulary</div>
+                                </div>
+                            </div>
+    
+                            <div class="product__body">
+                                <div class="product__title">MONEY TALK: Are you frugal or a spendthrift?</div>
+    
+                                <div class="product__buttons">
+                                    <div class="button button_secondary popup-open">
+                                        <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
+                                        </svg>
+                                        <span>Preview</span>
+                                    </div>
+                                    <a href="https://t.me/teacher_eslresources" target="_blank" class="button button_default">
+                                        <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Complete">
+                                                <g id="download">
+                                                    <g>
+                                                        <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                        <g>
+                                                            <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Download</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="popup__text">
+                                <div class="text">This multi-part lesson focuses on language for discussing money management, financial habits, and personal budgeting.</div>
+                                <ul class="list"><span class="list__label">Key areas include:</span>
+                                    <li>Vocabulary for money management <span class="text-semibold text-italic">(e.g., frugal, spendthrift, squander, splurge, cut back on, track expenses, emergency fund, live within one’s means, save for a rainy day, etc.)</span></li>
+                                    <li>Practice activities: personalized discussions, reading and analyzing an article, video-based listening and discussion</li>
+                                    <li>Homework and follow-up: quizlet set, vocabulary reinforcement, additional video exposure, expense-tracking reflection, and an optional writing task</li>
+                                </ul>
+                                <div class="text">The class can be split into up to three sessions for deeper practice, starting with vocabulary introduction and drill, followed by video discussion, and finishing with reading practice and extended speaking practice. Teachers are encouraged to adapt based on student needs, with flexibility to extend into additional sessions for more practice if needed.</div>
+                            </div>
+                        </div>
+    
+                        <div class="product" data-levels="b1, b2, c1" data-types="vocabulary, grammar">
+                            <div class="product__head">
+                                <div class="product__image"><img src="dist/img/course-8.png" alt="" height="100%"></div>
+                                <div class="product__tags">
+                                    <div class="product__tag product__tag_price">400UAH</div>
+                                    <div class="product__tag product__tag_level">B1-C1</div>
+                                    <div class="product__tag product__tag_type">Vocabulary</div>
+                                    <div class="product__tag product__tag_type">Grammar</div>
+                                </div>
+                            </div>
+    
+                            <div class="product__body">
+                                <div class="product__title">MONEY TALK: Prices, inflation, recession... <br>(Money + Intensifiers in comparison)</div>
+    
+                                <div class="product__buttons">
+                                    <div class="button button_secondary popup-open">
+                                        <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
+                                        </svg>
+                                        <span>Preview</span>
+                                    </div>
+                                    <a href="https://t.me/teacher_eslresources" target="_blank" class="button button_default">
+                                        <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Complete">
+                                                <g id="download">
+                                                    <g>
+                                                        <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                        <g>
+                                                            <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Download</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="popup__text">
+                                <div class="text">This multi-part lesson focuses on language for discussing prices, inflation, and economic trends, alongside a secondary focus on intensifiers in comparisons for added expressiveness.</div>
+                                <ul class="list"><span class="list__label">Key areas include:</span>
+                                    <li>Vocabulary for prices and economics <span class="text-semibold text-italic">(e.g., inflation, cost of living, tighten one’s belt, skyrocket, plummet, supply and demand, recession, go bankrupt, keep up with prices, etc.)</span></li>
+                                    <li>Grammar focus: exploration of intensifiers in comparisons <span class="text-semibold text-italic">(e.g., way higher, much worse, far too expensive)</span> as a secondary objective to enhance discussion</li>
+                                    <li>Practice activities: personalized discussions, reading and analyzing an article, listening activity, grammar drill, and reflection on economic strategies and personal experiences</li>
+                                    <li>Homework and follow-up: quizlet set, vocabulary and grammar reinforcement, additional video exposure, and an optional writing task</li>
+                                </ul>
+                                <div class="text">The class can be split into up to three sessions for deeper practice, starting with vocabulary introduction and discussion, followed by grammar and listening activity, and finishing with extended speaking and article discussions. Teachers are encouraged to adapt based on student needs, with flexibility to extend into additional sessions for more practice if needed.</div>
+                            </div>
+                        </div>
+    
+                        <div class="product" data-levels="b1, b2, c1" data-types="vocabulary">
+                            <div class="product__head">
+                                <div class="product__image"><img src="dist/img/course-9.png" alt="" height="100%"></div>
+                                <div class="product__tags">
+                                    <div class="product__tag product__tag_price">350UAH</div>
+                                    <div class="product__tag product__tag_level">B1-C1</div>
+                                    <div class="product__tag product__tag_type">Vocabulary</div>
+                                </div>
+                            </div>
+    
+                            <div class="product__body">
+                                <div class="product__title">WAKEY-WAKEY: Rise and Shine! <br>(Morning routine; female version)</div>
+    
+                                <div class="product__buttons">
+                                    <div class="button button_secondary popup-open">
+                                        <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
+                                        </svg>
+                                        <span>Preview</span>
+                                    </div>
+                                    <a href="https://t.me/teacher_eslresources" target="_blank" class="button button_default">
+                                        <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Complete">
+                                                <g id="download">
+                                                    <g>
+                                                        <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                        <g>
+                                                            <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Download</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="popup__text">
+                                <div class="text">This multi-part lesson centers on everyday language for discussing morning routines and habits.</div>
+                                <ul class="list"><span class="list__label">Key areas include:</span>
+                                    <li>Vocabulary for habits and routines <span class="text-semibold text-italic">(e.g., dawn, go off, drowsy, hit the snooze button, sleep in, groggy, scroll through, cold plunge, crave coffee, make the bed, etc.)</span></li>
+                                    <li>Practice activities: vocabulary drill, reading activity, personalized discussions, video discussion</li>
+                                    <li>Homework and follow-up: quizlet set, vocabulary reinforcement, additional video and reading exposure, and an optional writing task</li>
+                                </ul>
+                                <div class="text">The class can be split into up to two sessions: starting with vocabulary introduction and routine discussion, followed by video discussion and reflection. Teachers are encouraged to adapt based on student needs, with flexibility to extend into additional sessions for more practice if needed.</div>
+                            </div>
+                        </div>
+    
+                        <div class="product" data-levels="b1, b2, c1" data-types="vocabulary">
+                            <div class="product__head">
+                                <div class="product__image"><img src="dist/img/course-10.png" alt="" height="100%"></div>
+                                <div class="product__tags">
+                                    <div class="product__tag product__tag_price">350UAH</div>
+                                    <div class="product__tag product__tag_level">B1-C1</div>
+                                    <div class="product__tag product__tag_type">Vocabulary</div>
+                                </div>
+                            </div>
+    
+                            <div class="product__body">
+                                <div class="product__title">WAKEY-WAKEY: Rise and Shine! <br>(Morning routine; male version)</div>
+    
+                                <div class="product__buttons">
+                                    <div class="button button_secondary popup-open">
+                                        <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
+                                        </svg>
+                                        <span>Preview</span>
+                                    </div>
+                                    <a href="https://t.me/teacher_eslresources" target="_blank" class="button button_default">
+                                        <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Complete">
+                                                <g id="download">
+                                                    <g>
+                                                        <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                        <g>
+                                                            <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Download</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="popup__text">
+                                <div class="text">This multi-part lesson centers on everyday language for discussing morning routines and habits.</div>
+                                <ul class="list"><span class="list__label">Key areas include:</span>
+                                    <li>Vocabulary for habits and routines <span class="text-semibold text-italic">(e.g., dawn, go off, drowsy, hit the snooze button, sleep in, groggy, scroll through, cold plunge, crave coffee, make the bed, get dressed, etc.)</span></li>
+                                    <li>Practice activities: vocabulary drill, personalized discussions, reading and video discussions</li>
+                                    <li>Homework and follow-up: quizlet set, vocabulary reinforcement, additional video and reading exposure, and an optional writing task</li>
+                                </ul>
+                                <div class="text">The class can be split into up to two sessions: starting with vocabulary introduction and routine discussions, followed by extended practice through speaking and video discussion. Teachers are encouraged to adapt based on student needs, with flexibility to extend into additional sessions for more practice if needed.</div>
+                            </div>
+                        </div>
+    
+                        <div class="product" data-levels="b1, b2, c1" data-types="vocabulary">
+                            <div class="product__head">
+                                <div class="product__image"><img src="dist/img/course-11.png" alt="" height="100%"></div>
+                                <div class="product__tags">
+                                    <div class="product__tag product__tag_price">350UAH</div>
+                                    <div class="product__tag product__tag_level">B1-C1</div>
+                                    <div class="product__tag product__tag_type">Vocabulary</div>
+                                </div>
+                            </div>
+    
+                            <div class="product__body">
+                                <div class="product__title">Oops! Navigating Everyday Mishaps</div>
+    
+                                <div class="product__buttons">
+                                    <div class="button button_secondary popup-open">
+                                        <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
+                                        </svg>
+                                        <span>Preview</span>
+                                    </div>
+                                    <a href="https://t.me/teacher_eslresources" target="_blank" class="button button_default">
+                                        <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Complete">
+                                                <g id="download">
+                                                    <g>
+                                                        <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                        <g>
+                                                            <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Download</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="popup__text">
+                                <div class="text">This multi-part lesson focuses on language for describing mishaps while encouraging storytelling through speaking.</div>
+                                <ul class="list"><span class="list__label">Key areas include:</span>
+                                    <li>Vocabulary for mishaps <span class="text-semibold text-italic">(e.g., accidentally, by mistake, trip over, spill, misplace, bump into, run out of, mess up, clumsy, embarrassed, act up, crash, slip, mess up, etc.)</span></li>
+                                    <li>Practice activities: vocabulary drill, article and video discussions, labeling pictures of common mishaps, personalized discussions, threads discussion</li>
+                                    <li>Homework and follow-up: quizlet set, vocabulary reinforcement, additional video exposure, and an optional writing task</li>
+                                </ul>
+                                <div class="text">The class can be split into two ot three sessions: starting with vocabulary introduction and threads discussion, followed by extensive speaking practice and video discussion, and concluding with article discussion as an option. Teachers are encouraged to adapt based on student needs, with flexibility to extend into additional sessions for more practice if needed.</div>
+                            </div>
+                        </div>
+    
+                        <div class="product" data-levels="b1, b2, c1" data-types="vocabulary">
+                            <div class="product__head">
+                                <div class="product__image"><img src="dist/img/course-12.png" alt="" height="100%"></div>
+                                <div class="product__tags">
+                                    <div class="product__tag product__tag_price">400UAH</div>
+                                    <div class="product__tag product__tag_level">B1-C1</div>
+                                    <div class="product__tag product__tag_type">Vocabulary</div>
+                                </div>
+                            </div>
+    
+                            <div class="product__body">
+                                <div class="product__title">MAKING PLANS: Srr, I can't make it today... <br>(Making Plans; informal version)</div>
+    
+                                <div class="product__buttons">
+                                    <div class="button button_secondary popup-open">
+                                        <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                            <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
+                                        </svg>
+                                        <span>Preview</span>
+                                    </div>
+                                    <a href="https://t.me/teacher_eslresources" target="_blank" class="button button_default">
+                                        <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Complete">
+                                                <g id="download">
+                                                    <g>
+                                                        <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                        <g>
+                                                            <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Download</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="popup__text">
+                                <div class="text">This multi-part lesson focuses on informal everyday language for making, approving, rescheduling, and canceling plans.</div>
+                                <ul class="list"><span class="list__label">Key areas include:</span>
+                                    <li>Vocabulary for making plans <span class="text-semibold text-italic">(e.g., up to, sounds good, works for me, I’m in, catch up, hit you up, bail, take a rain check, up in the air, call it off, push to, get back to you, etc.)</span></li>
+                                    <li>Practice activities: vocabulary drill, sorting phrases into categories, role-playing scenarios, and video discussion</li>
+                                    <li>Homework and follow-up: quizlet set, vocabulary reinforcement, additional video exposure, and an optional writing task</li>
+                                </ul>
+                                <div class="text">The class can be split into two or three sessions: starting with vocabulary introduction, followed by role-playing, and concluding with additional practice and video analysis. Teachers are encouraged to adapt based on student needs, with flexibility to extend into additional sessions for more practice if needed.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </section>
-
-    <section class="products">
-        <div class="container">
-            <div class="products__grid">
-                <h2 class="products__title">Browse Resources</h2>
-                <div class="products__info">Discover high-quality teaching materials designed to engage your students and save your time.</div>
-
-                <div class="products__filters">
-                    <div id="filterLevel" class="products__filter dropdown" tabindex="0">
-                        <div class="dropdown__head">
-                            <span class="label">All levels</span>
-                            <div class="icon"><img src="dist/img/icon-arrow-down.svg" alt="" width="100%"></div>
-                        </div>
-                        
-                        <div class="dropdown__body">
-                            <div class="dropdown__option" data-level="all">All levels</div>
-                            <div class="dropdown__option" data-level="a1">A1</div>
-                            <div class="dropdown__option" data-level="a2">A2</div>
-                            <div class="dropdown__option" data-level="b1">B1</div>
-                            <div class="dropdown__option" data-level="b2">B2</div>
-                            <div class="dropdown__option" data-level="c1">C1</div>
-                            <div class="dropdown__option" data-level="c2">C2</div>
-                        </div>
-                    </div>
-
-                    <div id="filterType" class="products__filter dropdown" tabindex="0">
-                        <div class="dropdown__head">
-                            <span class="label">All types</span>
-                            <div class="icon"><img src="dist/img/icon-arrow-down.svg" alt="" width="100%"></div>
-                        </div>
-
-                        <div class="dropdown__body">
-                            <div class="dropdown__option" data-type="all">All types</div>
-                            <div class="dropdown__option" data-type="grammar">Grammar</div>
-                            <div class="dropdown__option" data-type="listening">Listening</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="products__list">
-                    <div class="product" data-filter="a1-grammar">
-                        <div class="product__head">
-                            <div class="product__image"><img src="dist/img/preview.png" alt="" width="100%"></div>
-                            <div class="product__tag product__tag_level">A1</div>
-                            <div class="product__tag product__tag_type">Grammar</div>
-                        </div>
-
-                        <div class="product__body">
-                            <div class="product__title">Present Simple Worksheets</div>
-
-                            <div class="product__buttons">
-                                <div class="button button_secondary popup-open">
-                                    <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-                                        <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
-                                    </svg>
-                                    <span>Preview</span>
-                                </div>
-                                <div class="button button_default">
-                                    <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="Complete">
-                                            <g id="download">
-                                                <g>
-                                                    <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                    <g>
-                                                        <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                        <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Download</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product" data-filter="a2-grammar">
-                        <div class="product__head">
-                            <div class="product__image"><img src="dist/img/preview.png" alt="" width="100%"></div>
-                            <div class="product__tag product__tag_level">A2</div>
-                            <div class="product__tag product__tag_type">Grammar</div>
-                        </div>
-
-                        <div class="product__body">
-                            <div class="product__title">Present Simple Worksheets</div>
-
-                            <div class="product__buttons">
-                                <div class="button button_secondary popup-open">
-                                    <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-                                        <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
-                                    </svg>
-                                    <span>Preview</span>
-                                </div>
-                                <div class="button button_default">
-                                    <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="Complete">
-                                            <g id="download">
-                                                <g>
-                                                    <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                    <g>
-                                                        <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                        <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Download</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product" data-filter="b1-grammar">
-                        <div class="product__head">
-                            <div class="product__image"><img src="dist/img/preview.png" alt="" width="100%"></div>
-                            <div class="product__tag product__tag_level">B1</div>
-                            <div class="product__tag product__tag_type">Grammar</div>
-                        </div>
-
-                        <div class="product__body">
-                            <div class="product__title">Present Simple Worksheets</div>
-
-                            <div class="product__buttons">
-                                <div class="button button_secondary popup-open">
-                                    <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-                                        <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
-                                    </svg>
-                                    <span>Preview</span>
-                                </div>
-                                <div class="button button_default">
-                                    <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="Complete">
-                                            <g id="download">
-                                                <g>
-                                                    <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                    <g>
-                                                        <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                        <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Download</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product" data-filter="b2-grammar">
-                        <div class="product__head">
-                            <div class="product__image"><img src="dist/img/preview.png" alt="" width="100%"></div>
-                            <div class="product__tag product__tag_level">B2</div>
-                            <div class="product__tag product__tag_type">Grammar</div>
-                        </div>
-
-                        <div class="product__body">
-                            <div class="product__title">Present Simple Worksheets</div>
-
-                            <div class="product__buttons">
-                                <div class="button button_secondary popup-open">
-                                    <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-                                        <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
-                                    </svg>
-                                    <span>Preview</span>
-                                </div>
-                                <div class="button button_default">
-                                    <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="Complete">
-                                            <g id="download">
-                                                <g>
-                                                    <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                    <g>
-                                                        <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                        <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Download</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product" data-filter="a1-listening">
-                        <div class="product__head">
-                            <div class="product__image"><img src="dist/img/preview.png" alt="" width="100%"></div>
-                            <div class="product__tag product__tag_level">A1</div>
-                            <div class="product__tag product__tag_type">Listening</div>
-                        </div>
-
-                        <div class="product__body">
-                            <div class="product__title">Present Simple Worksheets</div>
-
-                            <div class="product__buttons">
-                                <div class="button button_secondary popup-open">
-                                    <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-                                        <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
-                                    </svg>
-                                    <span>Preview</span>
-                                </div>
-                                <div class="button button_default">
-                                    <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="Complete">
-                                            <g id="download">
-                                                <g>
-                                                    <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                    <g>
-                                                        <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                        <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Download</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product" data-filter="c1-grammar">
-                        <div class="product__head">
-                            <div class="product__image"><img src="dist/img/preview.png" alt="" width="100%"></div>
-                            <div class="product__tag product__tag_level">C1</div>
-                            <div class="product__tag product__tag_type">Grammar</div>
-                        </div>
-
-                        <div class="product__body">
-                            <div class="product__title">Present Simple Worksheets</div>
-
-                            <div class="product__buttons">
-                                <div class="button button_secondary popup-open">
-                                    <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-                                        <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
-                                    </svg>
-                                    <span>Preview</span>
-                                </div>
-                                <div class="button button_default">
-                                    <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="Complete">
-                                            <g id="download">
-                                                <g>
-                                                    <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                    <g>
-                                                        <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                        <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Download</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product" data-filter="b2-listening">
-                        <div class="product__head">
-                            <div class="product__image"><img src="dist/img/preview.png" alt="" width="100%"></div>
-                            <div class="product__tag product__tag_level">B2</div>
-                            <div class="product__tag product__tag_type">Listening</div>
-                        </div>
-
-                        <div class="product__body">
-                            <div class="product__title">Present Simple Worksheets</div>
-
-                            <div class="product__buttons">
-                                <div class="button button_secondary popup-open">
-                                    <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-                                        <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
-                                    </svg>
-                                    <span>Preview</span>
-                                </div>
-                                <div class="button button_default">
-                                    <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="Complete">
-                                            <g id="download">
-                                                <g>
-                                                    <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                    <g>
-                                                        <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                        <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Download</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product" data-filter="a1-listening">
-                        <div class="product__head">
-                            <div class="product__image"><img src="dist/img/preview.png" alt="" width="100%"></div>
-                            <div class="product__tag product__tag_level">A1</div>
-                            <div class="product__tag product__tag_type">Listening</div>
-                        </div>
-
-                        <div class="product__body">
-                            <div class="product__title">Present Simple Worksheets</div>
-
-                            <div class="product__buttons">
-                                <div class="button button_secondary popup-open">
-                                    <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-                                        <path fill="#000000" fill-rule="evenodd" d="M3.415 10.242c-.067-.086-.13-.167-.186-.242a16.806 16.806 0 011.803-2.025C6.429 6.648 8.187 5.5 10 5.5c1.813 0 3.57 1.148 4.968 2.475A16.816 16.816 0 0116.771 10a16.9 16.9 0 01-1.803 2.025C13.57 13.352 11.813 14.5 10 14.5c-1.813 0-3.57-1.148-4.968-2.475a16.799 16.799 0 01-1.617-1.783zm15.423-.788L18 10l.838.546-.002.003-.003.004-.01.016-.037.054a17.123 17.123 0 01-.628.854 18.805 18.805 0 01-1.812 1.998C14.848 14.898 12.606 16.5 10 16.5s-4.848-1.602-6.346-3.025a18.806 18.806 0 01-2.44-2.852 6.01 6.01 0 01-.037-.054l-.01-.016-.003-.004-.001-.002c0-.001-.001-.001.837-.547l-.838-.546.002-.003.003-.004.01-.016a6.84 6.84 0 01.17-.245 18.804 18.804 0 012.308-2.66C5.151 5.1 7.394 3.499 10 3.499s4.848 1.602 6.346 3.025a18.803 18.803 0 012.44 2.852l.037.054.01.016.003.004.001.002zM18 10l.838-.546.355.546-.355.546L18 10zM1.162 9.454L2 10l-.838.546L.807 10l.355-.546zM9 10a1 1 0 112 0 1 1 0 01-2 0zm1-3a3 3 0 100 6 3 3 0 000-6z"/>
-                                    </svg>
-                                    <span>Preview</span>
-                                </div>
-                                <div class="button button_default">
-                                    <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="Complete">
-                                            <g id="download">
-                                                <g>
-                                                    <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                    <g>
-                                                        <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                        <line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2"/>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span>Download</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 </main>
 
 <footer class="footer">
     <div class="container">
         <div class="footer__grid">
-            <div class="footer__rights">© 2025 - All rights reserved</div>
+            <div class="footer__rights">© 2025 teacher. All rights reserved</div>
+            <div class="footer__links">
+                <a href="contacts.html" target="_blank" class="footer__link">Contacts</a>
+                <a href="#" target="_blank" class="footer__link">Instagram</a>
+                <a href="#" target="_blank" class="footer__link">Threads</a>
+            </div>
         </div>
     </div>
 </footer>
@@ -423,12 +745,17 @@
         <div class="popup__head">
             <div class="popup__close popup-close"><img src="dist/img/icon-cross.svg" alt="" width="100%"></div>
         </div>
-        <div class="popup__image"><img src="dist/img/preview.png" alt="" width="100%"></div>
+        <div class="popup__body">
+            <div class="popup__image"><img src="" alt="" width="100%"></div>
+
+            <div class="popup__info">
+                <div class="popup__title">LESSON OVERVIEW</div>
+            </div>
+        </div>
     </div>
 </div>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="dist/js/parallaxify.js"></script>
 <script src="dist/js/main.js"></script>
 </html>

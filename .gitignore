@@ -1,0 +1,9 @@
+.*
+~*
+
+node_modules/
+.npm
+
+# track these files, if they exist
+!.gitignore
+/dist/
